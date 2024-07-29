@@ -16,7 +16,7 @@ public class FlightScheduler {
     @Autowired
     private FlightService flightService;
 
-    @Scheduled(fixedRate = 50000) // Fetch data every 30 seconds
+    @Scheduled(fixedRate = 50000) // Fetch data every 50 seconds
     public void fetchAndCheckForUpdates() {
         List<FlightModel> flights = flightService.getAllFlights();
         
