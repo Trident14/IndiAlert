@@ -67,7 +67,3 @@ IndiAlert is built with a microservice architecture to provide real-time flight 
 - **SMS Integration:** use Twilio or whatsapp to send notification to mobile.
 - **Authentication:** Use JWT-based authentication and authorization.
 - **Containerization:** Docker will be used for containerizing the application.
-
-  ##Images
-  
-![App Screenshort 1](./Img1.jpg)
