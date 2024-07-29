@@ -1,0 +1,50 @@
+# Environment files
+.env
+
+# Node modules
+node_modules/
+
+# IDE-specific files and directories
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Additional
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Compiled output
+dist/
+build/
+target/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
