@@ -15,12 +15,12 @@ public class FlightModel {
     private String status;
     private LocalDateTime departureTime;
     private LocalDateTime arrivalTime;
-    private String departureDate; // New field for date in ddMMyy format
-    private String arrivalDate; // New field for date in ddMMyy format
+    private String departureDate; 
+    private String arrivalDate; 
     private String destinationCity;
     private String originCity;
     private String gate;
-    private FlightState previousState; // Nested object
+    private FlightState previousState; 
 
     // DateTimeFormatter for 24-hour time format and date format
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
@@ -52,13 +52,13 @@ public class FlightModel {
         this.status = status;
     }
 
-    public LocalDateTime getDepartureTime() { // Correct spelling
+    public LocalDateTime getDepartureTime() { 
         return departureTime;
     }
 
-    public void setDepartureTime(LocalDateTime departureTime) { // Correct spelling
+    public void setDepartureTime(LocalDateTime departureTime) { 
         this.departureTime = departureTime;
-        this.departureDate = departureTime.format(DATE_FORMATTER); // Set formatted date
+        this.departureDate = departureTime.format(DATE_FORMATTER); 
     }
 
     public LocalDateTime getArrivalTime() {
@@ -67,7 +67,7 @@ public class FlightModel {
 
     public void setArrivalTime(LocalDateTime arrivalTime) {
         this.arrivalTime = arrivalTime;
-        this.arrivalDate = arrivalTime.format(DATE_FORMATTER); // Set formatted date
+        this.arrivalDate = arrivalTime.format(DATE_FORMATTER); 
     }
 
     public String getDepartureDate() {
@@ -113,10 +113,10 @@ public class FlightModel {
     // Nested class for previous state
     public static class FlightState {
         private String status;
-        private LocalDateTime departureTime; // Correct spelling
+        private LocalDateTime departureTime; 
         private LocalDateTime arrivalTime;
-        private String departureDate; // New field for date in ddMMyy format
-        private String arrivalDate; // New field for date in ddMMyy format
+        private String departureDate; 
+        private String arrivalDate; 
         private String destinationCity;
         private String originCity;
         private String gate;
@@ -143,13 +143,13 @@ public class FlightModel {
             this.status = status;
         }
 
-        public LocalDateTime getDepartureTime() { // Correct spelling
+        public LocalDateTime getDepartureTime() { 
             return departureTime;
         }
 
-        public void setDepartureTime(LocalDateTime departureTime) { // Correct spelling
+        public void setDepartureTime(LocalDateTime departureTime) { 
             this.departureTime = departureTime;
-            this.departureDate = departureTime.format(DATE_FORMATTER); // Set formatted date
+            this.departureDate = departureTime.format(DATE_FORMATTER); 
         }
 
         public LocalDateTime getArrivalTime() {
@@ -158,7 +158,7 @@ public class FlightModel {
 
         public void setArrivalTime(LocalDateTime arrivalTime) {
             this.arrivalTime = arrivalTime;
-            this.arrivalDate = arrivalTime.format(DATE_FORMATTER); // Set formatted date
+            this.arrivalDate = arrivalTime.format(DATE_FORMATTER); 
         }
 
         public String getDepartureDate() {
