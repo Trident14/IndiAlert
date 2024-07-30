@@ -2,9 +2,9 @@
 
 IndiAlert is a real-time flight status update and notifications system designed to keep users informed about flight information and changes. The application uses a modern tech stack to ensure accurate, timely updates and alerts.
 
-Springboot backend - IndiAlert folder
-Node Js Backend - IndiAlertNode Folder
-React Js Frontend - flight-status
+- Springboot backend - IndiAlert folder
+- Node Js Backend - IndiAlertNode Folder
+- React Js Frontend - flight-status
 
 ## Tech Stack
 
