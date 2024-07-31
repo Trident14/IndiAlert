@@ -29,6 +29,10 @@ IndiAlert is built with a microservice architecture to provide real-time flight 
   - Fetches flight data from MongoDB at regular intervals.
   - Publishes updates to Kafka when changes are detected.
   - Handles email notifications using JavaMailSender and gmail SMTP.
+  - Internal APIs:
+      - Add Flight
+      - Update Flight
+      - Get All Flights
 
 - **Functionality:**
   - Uses scheduling to determine when to fetch new data.
@@ -51,6 +55,7 @@ IndiAlert is built with a microservice architecture to provide real-time flight 
   - Displays flight information in a table format.
   - Provides a search bar to filter flight data.
   - Updates flight information in real-time using Socket.IO.
+  - (Calls the getAllFlight API once via the Node server, then gets real-time updates using WebSocket)
 
 #### Database (MongoDB)
 
